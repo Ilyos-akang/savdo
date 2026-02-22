@@ -1,0 +1,2 @@
+# savdo
+savdo kirim chiqim
