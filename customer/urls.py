@@ -3,7 +3,7 @@ from .import views
 
 r=DefaultRouter()
 
-r.register('',views.CustomerAPIView)
+r.register('customers',views.CustomerAPIView)
 r.register('order',views.CustomeOrderAPIView)
 r.register('order-items',views.CustomeOrderItemsAPIView)
 r.register('cart',views.CustomeCartAPIView)

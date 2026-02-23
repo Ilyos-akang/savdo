@@ -4,7 +4,7 @@ from django.conf import settings
 class Category(models.Model):
     name=models.CharField(max_length=255)
     parent=models.ForeignKey('self',on_delete=models.CASCADE,blank=True,null=True,related_name='childern')
-    # shop=models.ForeignKey('shop.Shop',on_delete=models.CASCADE,related_name='category_shop')
+    shop=models.ForeignKey('shop.Shop',on_delete=models.CASCADE,related_name='category_shop',blank=True,null=True)
     title=models.CharField(max_length=255)
     is_active=models.BooleanField(default=True)
     created_at=models.DateTimeField(auto_now_add=True)

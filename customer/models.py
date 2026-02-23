@@ -29,7 +29,7 @@ class CustomeCart(models.Model):
 
 
     def __str__(self):
-        return self.customer.full_name
+        return "salom"
     
 
 
